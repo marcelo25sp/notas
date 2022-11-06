@@ -1,31 +1,47 @@
 Algoritmo "mediaAluno"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Nome do(a) aluno(a)
-// Data atual  : 30/10/2022
+
+
+
+
 Var
-// Seção de Declarações das variáveis 
-        n1,n2 : inteiro
-        media : real
-        aluno : caractere
+      nome : caractere
+      idade : inteiro
+      nota1, nota2, media : real
+
 Inicio
-      Escreval("Universidade Futuro")
-      Escreval("-------------------")
-      Escreval("Bem vindo(a)")
-      Escreval("-------------------")
-      Escreval("Digite o nome do aluno:")
-      Leia(aluno)
-      Escreval("Digite a nota 1:")
-      Leia(n1)
-      Escreval("Digite a nota 2:")
-      Leia(n2)
-      media <- (n1+n2)/2
-      Escreval("A média do aluno ", aluno," é:", media)
-      Se (media >=7) entao
-         Escreval("Aluno aprovado!")
+
+      Escreval("Universidade Futuro Brasil")
+      Escreval("--------------------------")
+      Escreval("Bem vindo!!")
+      Escreval("--------------------------")
+      Escreva("Digite o nome do aluno:")
+      Leia(nome)
+      Escreval("Digite a idade do aluno:")
+      Leia(idade)
+      Escreval("Digite a nota da prova 1:")
+      Leia(nota1)
+      Escreval("Digite a nota da prova 2:")
+      Leia(nota2)
+
+      media <- (nota1 + nota2)/2
+
+      Escreval("--------------------------")
+      Escreval("Universidade Futuro Brasil")
+      Escreval("Aluno: ",nome)
+      Escreval("-------------")
+      Escreval("Idade: ",idade)
+      Escreval("-------------")
+
+
+      Escreval("A media do aluno ", nome, " é", media)
+      Se (media >= 6) entao
+         Escreval("Aluno aprovado")
          senao
-         Escreval("Aluno reprovado!")
+         Escreval("Aluno reprovado")
       Fimse
+
+
+
+
 
 Fimalgoritmo
