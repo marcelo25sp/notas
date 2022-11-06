@@ -34,10 +34,14 @@ Inicio
 
 
       Escreval("A media do aluno ", nome, " é", media)
-      Se (media >= 6) entao
+      Se (media >= 7) entao
          Escreval("Aluno aprovado")
+      senao
+         Se(media>=5) e (media<7) entao
+           Escreval("Aluno em recuperação")
          senao
-         Escreval("Aluno reprovado")
+              Escreval("Aluno reprovado")
+         Fimse
       Fimse
 
 
